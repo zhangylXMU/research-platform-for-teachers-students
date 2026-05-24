@@ -6,7 +6,7 @@ import { projectApplications, projectMembers, projects, users } from "@db/schema
 import { TRPCError } from "@trpc/server";
 
 export const applicationRouter = createRouter({
-  apply: studentQuery
+  applyNow: studentQuery
     .input(
       z.object({
         projectId: z.number(),

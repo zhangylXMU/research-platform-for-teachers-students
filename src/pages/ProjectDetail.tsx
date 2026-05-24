@@ -46,7 +46,7 @@ export default function ProjectDetail() {
 
   const utils = trpc.useUtils();
 
-  const applyMutation = trpc.application.apply.useMutation({
+  const applyMutation = trpc.application.applyNow.useMutation({
     onSuccess: () => {
       setDialogOpen(false);
       setApplyMessage("");
